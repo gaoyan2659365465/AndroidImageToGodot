@@ -1,0 +1,39 @@
+[gd_scene load_steps=2 format=3 uid="uid://4l6vx28cttih"]
+
+[ext_resource type="Script" path="res://客户端.gd" id="1_abs36"]
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+script = ExtResource("1_abs36")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+layout_mode = 0
+offset_left = 602.0
+offset_top = 13.0
+offset_right = 1098.0
+offset_bottom = 437.0
+
+[node name="Button" type="Button" parent="."]
+layout_mode = 0
+offset_left = 45.0
+offset_top = 79.0
+offset_right = 183.0
+offset_bottom = 129.0
+text = "发送到电脑"
+
+[node name="LineEdit" type="LineEdit" parent="."]
+offset_left = 41.0
+offset_top = 155.0
+offset_right = 203.0
+offset_bottom = 211.0
+text = "192.168.31.70"
+
+[node name="LineEdit2" type="LineEdit" parent="."]
+offset_left = 229.0
+offset_top = 155.0
+offset_right = 296.063
+offset_bottom = 211.0
+text = "25550"
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]

@@ -1,0 +1,15 @@
+[gd_scene load_steps=2 format=3 uid="uid://nhabasadpuc1"]
+
+[ext_resource type="Script" path="res://服务端.gd" id="1_wwms8"]
+
+[node name="服务端" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+script = ExtResource("1_wwms8")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+offset_left = 220.0
+offset_top = 39.0
+offset_right = 707.0
+offset_bottom = 526.0
+expand_mode = 1
